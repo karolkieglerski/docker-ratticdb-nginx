@@ -59,6 +59,6 @@ cat >> "$nginx_conf_path" <<EOF
 EOF
 
 rm -f /etc/nginx/conf.d/default.conf
-exec /usr/sbin/nginx -g 'daemon off;'
+exec /usr/sbin/nginx -g 'daemon off;' "$@"
 
 set +e
