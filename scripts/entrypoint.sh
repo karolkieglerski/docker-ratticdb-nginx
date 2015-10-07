@@ -23,7 +23,7 @@ server {
   client_max_body_size 5M;
 EOF
 
-if [[ "$PROXY_MODE" == 'true' || "$PROXY_MODE" == 1 ]]; then
+if [[ "$PROXY_MODE" == 'true' || "$PROXY_MODE" == 'on' || "$PROXY_MODE" == 1 ]]; then
   cat >> "$nginx_conf_path" <<EOF
   real_ip_header X-Forwarded-For;
   real_ip_recursive on;
