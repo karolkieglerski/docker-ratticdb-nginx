@@ -11,5 +11,5 @@ docker run \
   -e 'CERT_NAME=default' \
   --link 'ratticdb-uwsgi:uwsgi' \
   --volumes-from 'ratticdb-uwsgi' \
-  kilerkarol/ratticdb-nginx:1.9
+  kilerkarol/ratticdb-nginx
 ```
