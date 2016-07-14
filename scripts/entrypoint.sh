@@ -20,7 +20,6 @@ upstream rattic {
 server {
   listen 80 default_server;
   server_name _;
-  client_max_body_size 5M;
 EOF
 
 if [[ "$PROXY_MODE" == 'true' || "$PROXY_MODE" == 'on' || "$PROXY_MODE" == 1 ]]; then
